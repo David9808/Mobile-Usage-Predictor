@@ -2,7 +2,6 @@ import pickle
 import streamlit as st
 import pandas as pd
 import numpy as np
-from sklearn.linear_model import LogisticRegression
 
 with open('log_reg_model.pkl', 'rb') as file:
     log_reg = pickle.load(file)
