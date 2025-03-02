@@ -9,7 +9,7 @@ with open('log_reg_model.pkl', 'rb') as file:
 st.title('Mobile Usage Categorizer')
 st.write("Enter the following metrics to know your category")
 
-apps_installed = st.number_input("Number of Apps Installed", min_value=0.0)
+apps_installed = st.number_input("Number of Apps Installed", min_value=0)
 app_usage = st.number_input("Average App Usage Time (Min/Day)", min_value=0.0)
 screen_time = st.number_input("Average Screen On Time (Hours/Day)",min_value=0.0)
 data_usage = st.number_input("Average Data Usage (MB/Day)", min_value=0.0)
